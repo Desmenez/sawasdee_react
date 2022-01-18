@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&display=swap");
+
+@import url("https://rsms.me/inter/inter.css");
+
+html,
+body,
+#root {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  outline: none;
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Outfit", sans-serif;
+  background: #e70009;
+  display: flex;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h1 {
+  font-family: "Outfit", sans-serif;
+  position: absolute;
+  bottom: 10vh;
+  left: 10vw;
+  font-weight: 800;
+  font-size: 120px;
+  margin: 0;
+  color: white;
+  line-height: 120px;
+  text-align: left;
+}
+
+h1 span {
+  font-size: 200px;
+}
+
+@media only screen and (max-width: 750px) {
+  h1 {
+    font-size: 100px;
+    line-height: 100px;
+  }
+
+  h1 span {
+    font-size: 160px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 80px;
+    line-height: 80px;
+  }
+
+  h1 span {
+    font-size: 100px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.picker {
+  position: absolute !important;
+  top: 10vh;
+  left: 10vw;
+  width: 90px !important;
+  height: 90px !important;
+}
+
+h2 {
+  font-family: "Outfit", sans-serif;
+  position: absolute;
+  top: 10vh;
+  left: 18vw;
+  padding: 0;
+  margin: 0px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 0.7em;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (max-width: 1200px) {
+  h2 {
+    font-size: 20px;
+    left: 24vw;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 20px;
+    top: 22vh;
+    left: 10vw;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.link {
+  font-family: "Outfit", sans-serif;
+  position: absolute;
+  top: 10vh;
+  right: 10vw;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+.link:hover {
+  color: #323232;
 }
